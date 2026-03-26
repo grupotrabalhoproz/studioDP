@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio Dayane de Paula</title>
+
+<!-- Fontes elegantes para salão -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+:root {
+  --bg-main: #fdfdfd;
+  --text-primary: #1a1a1a;
+  --text-secondary: #555;
+  --highlight: #c19a6b;
+  --accent: #f4e1d2;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: var(--bg-main);
+  overflow-x: hidden;
+  color: var(--text-primary);
+}
+
+/* HEADER */
+header {
+  padding: 60px 20px 80px;
+  text-align: center;
+  background: linear-gradient(180deg, var(--accent), #fff);
+}
+header img.logo {
+  max-width: 120px;
+  margin-bottom: 20px;
+}
+header h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: var(--highlight);
+}
+header p {
+  max-width: 700px;
+  margin: 15px auto;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+/* SEÇÕES */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+.section-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--highlight);
+}
+
+/* CARDS */
+.card {
+  border-radius: 14px;
+  transition: 0.3s;
+  border: 1px solid #eee;
+}
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--highlight);
+}
+.card h5 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.6rem;
+  color: var(--highlight);
+}
+
+/* 🔥 CARROSSEL INFINITO */
+.netflix-carousel {
+  overflow: hidden;
+  width: 100%;
+  padding: 40px 0;
+}
+.netflix-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+.netflix-item {
+  flex: 0 0 auto;
+  width: 260px;
+  height: 260px;
+  margin: 0 20px;
+  opacity: 0.7;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.netflix-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+}
+.netflix-item:hover {
+  transform: scale(1.15);
+  opacity: 1;
+}
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  background: var(--accent);
+  padding: 50px 20px;
+  text-align: center;
+}
+footer h3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: var(--highlight);
+}
+footer a {
+  color: var(--highlight);
+  font-weight: 600;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <!-- Logo adicionada -->
+  <img src="imgs/logo.jpg" alt="Logo Studio Dayane de Paula" class="logo">
+  <h1>Studio Dayane de Paula</h1>
+  <p>Um espaço de beleza e bem-estar, onde cada detalhe é pensado para valorizar a sua essência.</p>
+</header>
+
+<!-- SEÇÃO DE INFORMAÇÕES EM CARDS -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Sobre o Studio</h2>
+    <div class="row justify-content-center">
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card p-3 shadow-sm h-100">
+          <h5>Área de Atuação</h5>
+          <p>Beleza e estética com foco em realçar sua identidade.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card p-3 shadow-sm h-100">
+          <h5>Missão</h5>
+          <p>Promover autoestima e bem-estar através de cuidados personalizados.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card p-3 shadow-sm h-100">
+          <h5>Valores</h5>
+          <p>Referência<br>Inovação<br>Expansão<br>Experiência</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card p-3 shadow-sm h-100">
+          <h5>Diferenciais</h5>
+          <p>Segurança, excelência, atenção aos detalhes e técnica impecável.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HISTÓRIA -->
+<section class="section">
+<h2 class="section-title">História</h2>
+<p>O Studio nasceu de um sonho: conquistar independência e estabilidade financeira através da paixão pela beleza. Hoje, atendendo em casa, seguimos crescendo com dedicação e desejo constante de evolução.</p>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="section">
+<h2 class="section-title">Serviços</h2>
+<div class="container">
+<div class="row">
+
+<div class="col-md-6 mb-4">
+<div class="card p-4">
+<h4>Extensão de Cílios</h4>
+<p>Realce seu olhar com técnicas modernas e acabamento natural.</p>
+</div>
+</div>
+
+<div class="col-md-6 mb-4">
+<div class="card p-4">
+<h4>Design de Sobrancelhas</h4>
+<p>Harmonia e simetria para valorizar sua expressão.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- GALERIA -->
+<section class="section">
+<h2 class="section-title">Galeria</h2>
+<div class="netflix-carousel">
+  <div class="netflix-track" id="track">
+    <div class="netflix-item"><img src="imgs/1.jpg"></div>
+    <div class="netflix-item"><img src="imgs/2.jpg"></div>
+    <div class="netflix-item"><img src="imgs/3.jpg"></div>
+    <div class="netflix-item"><img src="imgs/4.jpg"></div>
+    <div class="netflix-item"><img src="imgs/5.jpg"></div>
+    <div class="netflix-item"><img src="imgs/6.jpg"></div>
+    <div class="netflix-item"><img src="imgs/7.jpg"></div>
+    <div class="netflix-item"><img src="imgs/8.jpg"></div>
+    <div class="netflix-item"><img src="imgs/9.jpg"></div>
+  </div>
+</div>
+</section>
+
+<!-- PÚBLICO -->
+<section class="section">
+<h2 class="section-title">Público-Alvo</h2>
+<p>Mulheres que buscam realçar sua beleza e cuidar de si mesmas.</p>
+</section>
+
+<a href="https://wa.me/5599999999999" class="whatsapp">💬</a>
+
+<!-- FOOTER -->
+<footer>
+<h3>Studio Dayane de Paula</h3>
+<p><strong>📍 Local:</strong> Bairro Lagoa</p>
+<p><strong>WhatsApp:</strong><br><a href="https://wa.me/5599999999999">Clique para conversar</a></p>
+<p><strong>Instagram:</strong><br><a href="https://instagram.com/studiodayanedepaula_04" target="_blank">@studiodayanedepaula_04</a></p>
+<p style="font-size:0.9rem;">Objetivo do Instagram: divulgar os serviços</p>
+<hr style="max-width:300px; margin:20px auto;">
+<p style="font-size:0.9rem;">© 2026 Studio Dayane de Paula</p>
